@@ -1,3 +1,7 @@
+---
+icon: material/controller
+---
+
 # Input
 
 Alle Input Keys/Mousebuttons innerhalb `Input.<taste>`.

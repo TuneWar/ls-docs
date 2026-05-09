@@ -1,4 +1,7 @@
 site_name: LS Docs
+site_author: TuneWar
+site_url: https://docs.tunewar.de
+repo_url: https://github.com/TuneWar/ls-docs
 
 theme:
   name: material
@@ -7,6 +10,8 @@ theme:
     primary: green
   features:
     - navigation.tabs
+    - content.code.copy
+  language: de
 
 markdown_extensions:
   - pymdownx.highlight:
@@ -20,3 +25,9 @@ markdown_extensions:
   - pymdownx.details
   - attr_list
   - md_in_html
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+
+plugins:
+  - search

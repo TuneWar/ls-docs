@@ -1,3 +1,7 @@
+---
+icon: material/lightning-bolt
+---
+
 # Events
 
 Mit den Events in LS können während des Spielens verschiedene Funktionen (z. B. Map laden, Maus bewegen) aufgerufen werden.
