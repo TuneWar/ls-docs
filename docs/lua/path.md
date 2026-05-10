@@ -1,3 +1,7 @@
+---
+icon: material/folder
+---
+
 # Pfade
 
 ## Map Ordner

@@ -1,4 +1,10 @@
+---
+icon: material/school
+---
+
 # Basics
+
+GIANTS benutzt Roblox ihre Lua Version, namens [Luau](https://luau.org/).
 
 Um Lua online ausprobieren, ohne GIANTS Funktionen, dann kann man verschiedene Webseiten online benutzen:
 

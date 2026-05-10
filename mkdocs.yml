@@ -11,6 +11,8 @@ theme:
   features:
     - navigation.tabs
     - content.code.copy
+    - navigation.path
+    - navigation.indexes
   language: de
 
 markdown_extensions:

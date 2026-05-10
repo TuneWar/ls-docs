@@ -1,4 +1,4 @@
-Willkommen! Dies ist meine (TuneWar) Dokumentationsseite für LS-Modding und Lua-Skripting.
+Willkommen! Dies ist unsere Dokumentationsseite für LS-Modding und Lua-Skripting.
 
 Auf dieser Dokumentationsseite kann man sich oben mit den verschiedenen Themen befassen und über die Links auf die einzelnen Seiten gehen.
 
