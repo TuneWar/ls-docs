@@ -38,7 +38,7 @@ Dies soll das Spielerlebnis deutlich verbessern, in dem sich jeh nach Spielzeit 
 8. In der xml findest Du schon ein Paar Beispiele:
 
     ```xml
-    <object objectName="dekopack/Playground/vog_outsidePool01" playtimeSeconds="10000" visible="false" />
+    <object objectName="dekopack/Playground/vog_outsidePool01" playtimeDays="10" visible="false" />
     ```
 
 ## Beschreibung
@@ -47,13 +47,13 @@ Dies soll das Spielerlebnis deutlich verbessern, in dem sich jeh nach Spielzeit 
 
 vog_boardStackA_PREFAB1 ist der Objekt Name, die Objektnamen dürfen nur einmal vorhanden sein, also einzigartig! Es kann auch eine TransformGroup erstellt werden in der mehrere Objekte enthalten sind. Die Children sind durch `/` getrennt.
 
-`playtimeSeconds="10000"`
+`playtimeDays="10"`
 
-Hier wird die Spielzeit in Sekunden angegeben, wann die Aktionen ausgeführt werden.
+Hier wird die Spielzeit in Tage angegeben, wann die Aktionen ausgeführt werden soll.
 
 `visible="false"`
 
-Hier sagst Du bei `false` oder `true` das Objekt anzeigen oder ausblenden soll nach die Spielzeit.
+Hier sagst Du bei `false` oder `true` ob das Objekt anzeigen oder ausblenden soll.
 
 ## Animation
 
@@ -61,7 +61,7 @@ In der XML muss eine `#!xml <animation />` im `#!xml <object></object>` hinzugef
 
 Es gibt diese Attributen im `<animation />`:
 
-- `durationSeconds`: Dauer in Sekunden wie lange die Animation geht
+- `durationDays`: Dauer in Tage wie lange die Animation geht
 - `type`: Was animiert wird. Gerade wird nur `"translate"` (Position) unterstützt.
 - `from`: Koordinaten von wo es anfängt.
 - `to`: Koordinaten zu wohin es animiert wird.
@@ -74,22 +74,22 @@ Es gibt diese Attributen im `<animation />`:
 <objects>
    <object
         objectName="dekopack/Playground/vog_outsidePool01"
-        playtimeSeconds="10000"
+        playtimeDays="10"
         visible="false"
-    />  <!-- objekt nach 2.7h ausblenden -->
+    />  <!-- objekt nach 10 Tagen Spielzeit ausblenden -->
    <object
         objectName="dekopack/Playground/vog_outsidePool02"
-        playtimeSeconds="80000"
+        playtimeDays="22"
         visible="true"
-    /> <!-- objekt nach 22h einblenden -->
+    /> <!-- objekt nach 22 Tagen Spielzeit einblenden -->
 
 
    <object
         objectName="vog_scriptLua/vog_buildings/vog_residentialHouse03_1_deko"
-        playtimeSeconds="10100"
+        playtimeDays="25"
         visible="true"> 
         <animation
-            durationSeconds="2"
+            durationDays="0.5"
             type="translate"
             from="5000 10 5000"
             to="5000 30 5000"
